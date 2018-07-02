@@ -42,7 +42,7 @@ export default {
     data(){
         return{
             msg:'',
-            list:'',
+            list:[],
             showhasnotm: false,
             showhasm: false
         }
@@ -55,7 +55,7 @@ export default {
             this.showhasm = !this.showhasm
         }
     },
-    created(){
+    mounted(){
         this.msg = localStorage.getItem("accesstoken");
         console.log(this.msg);
         if(this.msg != null) {

@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "a5e3eea9b2780c18caeb"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "74091a06b90e3e4d2072"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -13615,7 +13615,7 @@ exports.default = {
     data: function data() {
         return {
             msg: '',
-            list: '',
+            list: [],
             showhasnotm: false,
             showhasm: false
         };
@@ -13629,7 +13629,7 @@ exports.default = {
             this.showhasm = !this.showhasm;
         }
     },
-    created: function created() {
+    mounted: function mounted() {
         var _this = this;
 
         this.msg = localStorage.getItem("accesstoken");
